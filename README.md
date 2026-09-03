@@ -1,4 +1,4 @@
-# PyTorch MLP for Breast Cancer Classification
+# PyTorch  Multi-Layer Perceptron (MLP) for Breast Cancer Classification
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
