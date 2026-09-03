@@ -9,7 +9,7 @@ The model converges rapidly and achieves high accuracy, demonstrating that a MLP
 
 <img width="1200" height="500" alt="Image" src="https://github.com/user-attachments/assets/3a8c44ed-845c-46c3-9450-f16f4f207cb8" />
 
-**Sample Output:**
+**Output:**
 ```text
 X shape: (569, 30)
 y shape: (569,)
