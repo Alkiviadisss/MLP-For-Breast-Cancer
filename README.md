@@ -4,34 +4,6 @@ This repository contains a streamlined, PyTorch implementation of a Multi-Layer 
 
 It serves as a foundational boilerplate for handling tabular data in PyTorch using neural network architecture, demonstrating best practices such as data splitting, proper feature scaling, and tracking validation metrics during the training loop.
 
-## Dataset
-This project uses the **Breast Cancer Wisconsin (Diagnostic) Dataset**.
-* **Features:** 30 numerical features computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.
-* **Target:** Binary classification (Malignant or Benign).
-
-## Prerequisites
-To run this code, you will need the following libraries installed:
-```bash
-pip install torch numpy pandas scikit-learn matplotlib
-```
-
-## Model Architecture
-The neural network is a Feed-Forward MLP built using `torch.nn.Sequential`:
-* **Input Layer:** 30 features
-* **Hidden Layer 1:** 64 units, ReLU activation
-* **Hidden Layer 2:** 32 units, ReLU activation
-* **Output Layer:** 2 units (Binary Classification)
-
-## Execution Pipeline
-The script (`MLP.py`) follows a strict machine learning pipeline:
-1. **Data Loading:** Loads the dataset using Pandas.
-2. **Stratified Splitting:** Splits data into 80% Train, 10% Validation, and 10% Test.
-3. **Scaling:** Uses `StandardScaler` (fit *only* on training data to prevent data leakage).
-4. **Tensor Conversion:** Converts NumPy arrays to PyTorch Tensors.
-5. **Training Loop:** Trains using the Adam optimizer and CrossEntropyLoss over 100 epochs.
-6. **Validation:** Evaluates accuracy and loss on the validation set at the end of each epoch.
-7. **Testing:** Runs a final evaluation on the unseen test set.
-
 ## Results
 The model converges rapidly and achieves high accuracy, demonstrating that a MLP is highly effective for this dataset.
 
@@ -66,3 +38,31 @@ Epoch [100/100] Train Loss: 0.0458 Val Loss: 0.0277 Val Accuracy: 1.0000
 
 Final Test Accuracy: 0.9298245906829834
 ```
+
+## Dataset
+This project uses the **Breast Cancer Wisconsin (Diagnostic) Dataset**.
+* **Features:** 30 numerical features computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.
+* **Target:** Binary classification (Malignant or Benign).
+
+## Prerequisites
+To run this code, you will need the following libraries installed:
+```bash
+pip install torch numpy pandas scikit-learn matplotlib
+```
+
+## Model Architecture
+The neural network is a Feed-Forward MLP built using `torch.nn.Sequential`:
+* **Input Layer:** 30 features
+* **Hidden Layer 1:** 64 units, ReLU activation
+* **Hidden Layer 2:** 32 units, ReLU activation
+* **Output Layer:** 2 units (Binary Classification)
+
+## Execution Pipeline
+The script (`MLP.py`) follows a strict machine learning pipeline:
+1. **Data Loading:** Loads the dataset using Pandas.
+2. **Stratified Splitting:** Splits data into 80% Train, 10% Validation, and 10% Test.
+3. **Scaling:** Uses `StandardScaler` (fit *only* on training data to prevent data leakage).
+4. **Tensor Conversion:** Converts NumPy arrays to PyTorch Tensors.
+5. **Training Loop:** Trains using the Adam optimizer and CrossEntropyLoss over 100 epochs.
+6. **Validation:** Evaluates accuracy and loss on the validation set at the end of each epoch.
+7. **Testing:** Runs a final evaluation on the unseen test set.
