@@ -61,7 +61,7 @@ The script (`MLP.py`) follows a strict machine learning pipeline:
 5. **Training Loop:** Trains using the Adam optimizer and CrossEntropyLoss over 100 epochs.
 6. **Validation:** Evaluates accuracy and loss on the validation set at the end of each epoch.
 7. **Testing:** Runs a final evaluation on the unseen test set.
-8. 
+
 ## Dataset
 This project uses the **Breast Cancer Wisconsin (Diagnostic) Dataset**.
 * **Features:** 30 numerical features computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.
