@@ -39,17 +39,6 @@ Epoch [100/100] Train Loss: 0.0458 Val Loss: 0.0277 Val Accuracy: 1.0000
 Final Test Accuracy: 0.9298245906829834
 ```
 
-## Dataset
-This project uses the **Breast Cancer Wisconsin (Diagnostic) Dataset**.
-* **Features:** 30 numerical features computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.
-* **Target:** Binary classification (Malignant or Benign).
-
-## Prerequisites
-To run this code, you will need the following libraries installed:
-```bash
-pip install torch numpy pandas scikit-learn matplotlib
-```
-
 ## Model Architecture
 The neural network is a Feed-Forward MLP built using `torch.nn.Sequential`:
 * **Input Layer:** 30 features
@@ -66,3 +55,14 @@ The script (`MLP.py`) follows a strict machine learning pipeline:
 5. **Training Loop:** Trains using the Adam optimizer and CrossEntropyLoss over 100 epochs.
 6. **Validation:** Evaluates accuracy and loss on the validation set at the end of each epoch.
 7. **Testing:** Runs a final evaluation on the unseen test set.
+8. 
+## Dataset
+This project uses the **Breast Cancer Wisconsin (Diagnostic) Dataset**.
+* **Features:** 30 numerical features computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.
+* **Target:** Binary classification (Malignant or Benign).
+
+## Prerequisites
+To run this code, you will need the following libraries installed:
+```bash
+pip install torch numpy pandas scikit-learn matplotlib
+```
