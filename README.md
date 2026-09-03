@@ -1,5 +1,12 @@
 # PyTorch MLP for Breast Cancer Classification
 
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+
 This repository contains a streamlined, PyTorch implementation of a Multi-Layer Perceptron (MLP) built to classify data from the Breast Cancer Wisconsin dataset.
 
 It serves as a foundational boilerplate for handling tabular data in PyTorch using neural network architecture, demonstrating best practices such as data splitting, proper feature scaling, and tracking validation metrics during the training loop.
